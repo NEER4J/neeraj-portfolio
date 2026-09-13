@@ -283,14 +283,6 @@ export const SELECTED_WORK: Work[] = [
     image: study.image,
   })),
   {
-    name: "Trade Business School",
-    year: "2023",
-    blurb:
-      "Multi-tenant SaaS for trades education, including course delivery, AI document processing, and student management.",
-    metric: "200 students",
-    image: "/projects/tbs.png",
-  },
-  {
     name: "Apstic",
     year: "2025",
     blurb:
