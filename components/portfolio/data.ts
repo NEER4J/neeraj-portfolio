@@ -6,6 +6,7 @@ export const LINKS = {
   x: "https://x.com/NEER4J__",
   docsiv: "https://docsiv.com",
   govgrant: "https://govgrant.ca",
+  habiv: "https://habiv.com",
   speediq: "https://app.speediq.ai/",
   resume: "/Neeraj_Kumar_Sharma_Product_Manager.pdf",
 };
@@ -153,6 +154,59 @@ export const CASE_STUDIES: CaseStudy[] = [
       "Platform thinking",
       "Reliability and data freshness",
       "Product delivery at scale",
+    ],
+  },
+  {
+    slug: "habiv",
+    name: "Habiv",
+    label: "AI-native tiny game marketplace",
+    year: "2026",
+    url: LINKS.habiv,
+    image: "/projects/habiv.png?v=2",
+    metric: "Live browser-first product",
+    summary:
+      "A browser-first home for tiny 10–45 second games: discover, play, remix, and share games made by people and AI agents.",
+    problem:
+      "AI-made games were easy to generate but difficult to experience as a product. They lived in chats, folders, and one-off demos, while players had no focused place to discover short games, creators had no publishing loop, and the platform had to keep untrusted game code away from the main app.",
+    research: [
+      "Started from the behavior, not the genre: short games should load quickly, explain themselves fast, and fit into the small gaps in a player's day.",
+      "Separated the two jobs in the product: players need an instant browse-and-play loop; creators need a clear path from a bundle or agent prompt to a public game.",
+      "Treated remixing and sharing as part of discovery, so a game could be a starting point for the next creation rather than a dead-end play session.",
+      "Used the platform constraints to shape the experience: public browsing should stay frictionless, while publishing, creator tools, and account settings can be gated.",
+    ],
+    role:
+      "I shaped the product direction, information architecture, visual system, and the path from a finished UI to a real creator platform. I built the first product surface, mapped the player and creator journeys, and defined the storage, ingest, runtime, analytics, and agent-publishing systems needed to make the concept durable.",
+    decisions: [
+      "Made 10–45 second sessions the product constraint, keeping the promise closer to instant play than to a traditional game platform.",
+      "Designed the home feed as a bento-style discovery surface with a featured queue, category rails, and fast access to play instead of a directory of listings.",
+      "Kept browsing and playing public, reserving authentication for creator actions such as publishing, saved games, settings, and personal libraries.",
+      "Isolated playable bundles on a separate game origin so game code cannot read Habiv cookies or reach back into the main application context.",
+      "Made publishing agent-native through an MCP route and a conversion pipeline that can inspect bundles, detect engines, create thumbnails, and smoke-test a playable build.",
+    ],
+    shipped: [
+      "Responsive home feed with featured games, category navigation, search, saved games, history, and a creator profile surface",
+      "Watch pages with an embedded player, prompt and version history, comments, leaderboard, and related-game queue",
+      "Creator workflows for publishing, editing, visibility, store art, settings, API tokens, and MCP connection details",
+      "Platform foundations for Supabase identity and catalog data, R2 game storage, ingest/conversion jobs, analytics, runs, and leaderboards",
+    ],
+    outcomes: [
+      "Turned an AI-game concept into a live product at habiv.com with a clear player loop and creator loop",
+      "Created a product boundary that makes tiny games feel immediate while leaving room for remixing, social discovery, and creator tools",
+      "Connected interface decisions to a practical platform architecture instead of treating the marketplace UI as a static showcase",
+    ],
+    nextMetrics: [
+      "Time from landing to first playable game",
+      "First-play completion and repeat sessions per player",
+      "Publish-to-first-play time and percentage of bundles that pass ingest cleanly",
+      "Remix rate, share rate, creator return rate, and game-load reliability as guardrails",
+    ],
+    learning:
+      "For an AI-native marketplace, the product is not only the catalog. It is the handoff between generation, publishing, safe execution, discovery, and the next remix. Every step has to feel lighter than the toolchain that produced the game.",
+    demonstrates: [
+      "0 to 1 product strategy",
+      "AI-native creator workflows",
+      "Consumer and creator UX",
+      "Platform and trust-boundary thinking",
     ],
   },
   {

@@ -64,6 +64,7 @@ export const metadata: Metadata = {
     "OpenAI",
     "Docsiv",
     "Govgrant.ca",
+    "Habiv",
     "SpeedIQ",
     "Virtual Xcellence",
   ],
@@ -123,6 +124,7 @@ function PersonJsonLd() {
     ...CONTACT.filter((item) => !item.href.startsWith("mailto:")).map((item) => item.href),
     "https://docsiv.com",
     "https://govgrant.ca",
+    "https://habiv.com",
     "https://apstic.com",
   ];
 
