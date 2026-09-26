@@ -1,4 +1,4 @@
-// Product-positioned content shared by the portfolio and case-study pages.
+// Engineering and technical-leadership content shared by the portfolio pages.
 
 export const LINKS = {
   linkedin: "https://linkedin.com/in/neer4j",
@@ -8,22 +8,22 @@ export const LINKS = {
   govgrant: "https://govgrant.ca",
   habiv: "https://habiv.com",
   speediq: "https://app.speediq.ai/",
-  resume: "/Neeraj_Kumar_Sharma_Product_Manager.pdf",
+  resume: "/Neeraj_Sharma_Full_Stack_Engineering_Resume.pdf",
 };
 
 export const PROFILE = {
   name: "Neeraj Sharma",
-  role: "Technical Product Manager",
-  headline: "I turn messy workflows into AI products people can use.",
+  role: "Full-Stack Engineer & Technical Lead",
+  headline: "I build AI and SaaS products, and lead the engineering that makes them work.",
   summary:
-    "Product-minded engineer and founder with five years of experience taking B2B SaaS from ambiguous customer problems to production. I combine discovery, prioritization, and product judgment with enough technical depth to ship alongside engineering teams.",
+    "Full-stack engineer with 5+ years building AI and SaaS products across frontend, backend, data, and integrations. I stay hands-on while owning technical direction, architecture, and delivery from the first version through production.",
 };
 
 export const INTRO = {
   name: PROFILE.name,
-  role: "a technical product manager building AI products",
+  role: "a full-stack engineer and hands-on technical lead",
   before:
-    "For the past five years, I've taken B2B SaaS from ambiguous customer problems to production - combining product judgment with hands-on technical depth.",
+    "For 5+ years, I've designed, built, and shipped AI-enabled SaaS across frontend, backend, data, and integrations. I stay close to the code while setting technical direction and helping teams deliver.",
 };
 
 export const METRICS = [
@@ -57,27 +57,27 @@ export const CASE_STUDIES: CaseStudy[] = [
   {
     slug: "docsiv",
     name: "Docsiv",
-    label: "Founder-led 0 to 1 product",
+    label: "AI SaaS · technical founder",
     year: "2024-2026",
     url: LINKS.docsiv,
     image: "/projects/docsiv.png?v=2",
     metric: "Live and onboarding early agencies",
     summary:
-      "An AI document workspace that helps agencies create, brand, share, sign, and track client deliverables in one workflow.",
+      "A multi-tenant AI document workspace for agencies, built across editors, brand kits, client portals, collaboration, analytics, signing, and billing.",
     problem:
       "Agencies were producing proposals, reports, contracts, decks, and spreadsheets across disconnected tools. The work was repeatedly copied, reformatted, emailed, and tracked by hand, creating an inconsistent client experience.",
     research: [
-      "Observed the same client-delivery friction repeat across agencies: too many tools, inconsistent branding, and fragmented approvals.",
-      "Framed the primary user as an agency or service team responsible for the quality of a client-facing deliverable, not simply someone looking for an AI writing tool.",
-      "Research pointed to the connected workflow and branded client experience as the product wedge: create, brand, share, sign, and track.",
+      "The workspace needed to support several document types while keeping shared capabilities such as brand context, access, history, and exports consistent.",
+      "Agency workspaces and external client portals required clear tenant and permission boundaries, including branded delivery on custom domains.",
+      "Collaboration, analytics, signing, and billing had to connect to document creation as part of the same production workflow.",
     ],
     role:
-      "As founder, I shaped the product thesis, translated agency workflows into a roadmap, worked with designers and developers, built core product systems, launched the product, and now use early-user conversations to guide distribution and the next product decisions.",
+      "As technical founder, I designed and built the full-stack workspace and own its technical direction. I shipped AI-assisted editors, team and client workspaces, brand application, collaboration, document analytics, signing, and credit billing. Docsiv is live, and I continue to improve it using feedback from early agencies.",
     decisions: [
-      "Focused the initial audience on agencies and service firms, where documents directly influence revenue and client trust.",
-      "Made the client workflow the product boundary: create, brand, share, sign, and track, instead of building another general-purpose editor.",
-      "Designed brand context and client portals as core platform primitives rather than add-on presentation features.",
-      "Prioritized a multi-tenant foundation, plan-based billing, and AI credits early so the product could move from prototype to a real SaaS business.",
+      "Built around agency workspaces, with tenant-aware access and client portals for external delivery.",
+      "Used reusable document and brand primitives to support proposals, reports, contracts, decks, sheets, forms, and whiteboards.",
+      "Integrated real-time collaboration, comments, and version history so teams can review work in the same workspace.",
+      "Connected AI usage to credits and subscription billing, alongside analytics and e-signature workflows.",
     ],
     shipped: [
       "AI-assisted proposals, reports, contracts, decks, sheets, forms, and whiteboards",
@@ -86,29 +86,29 @@ export const CASE_STUDIES: CaseStudy[] = [
       "A production workspace now used to onboard and learn from early agencies",
     ],
     outcomes: [
-      "Moved from observed problem to research, private beta, and public launch",
-      "Established a weekly shipping and early-customer learning loop",
-      "Created a coherent product platform instead of a collection of isolated AI features",
+      "Shipped a live, multi-tenant platform spanning document creation through client delivery",
+      "Launched branded portals and collaboration workflows alongside AI-assisted editing",
+      "Built a common workspace foundation that supports several document formats and billing plans",
     ],
     nextMetrics: [
-      "Time from brief to first client-ready draft",
-      "Draft-to-share and share-to-sign conversion",
-      "Weekly active agency workspaces and repeat client delivery",
-      "Generated-content quality and client-portal reliability as guardrails",
+      "Editor load time and save reliability across document types",
+      "AI generation latency and output quality by workflow",
+      "Workspace access-control and tenant-isolation checks",
+      "Client-portal availability and share-to-sign completion",
     ],
     learning:
-      "The strongest product story is not AI writing by itself. It is a calmer client workflow that connects the work before and after the document is created.",
+      "Shared platform primitives make it possible to add document-specific editing without rebuilding identity, brand context, collaboration, and delivery for every format.",
     demonstrates: [
-      "Customer problem framing",
-      "0 to 1 product strategy",
-      "Roadmap and scope decisions",
-      "Founder-level execution",
+      "Full-stack ownership",
+      "Multi-tenant SaaS architecture",
+      "AI, collaboration, and billing integrations",
+      "Technical leadership from build to launch",
     ],
   },
   {
     slug: "govgrant",
     name: "Govgrant.ca",
-    label: "AI recommendations at production scale",
+    label: "Production RAG platform · lead engineer",
     year: "2025-2026",
     url: LINKS.govgrant,
     image: "/projects/govgrant.png",
@@ -118,17 +118,17 @@ export const CASE_STUDIES: CaseStudy[] = [
     problem:
       "Canadian businesses had to search fragmented government sources, interpret eligibility criteria, and repeatedly check whether programs were still open. The product needed to make discovery faster without presenting stale or irrelevant opportunities.",
     research: [
-      "Mapped the journey from a business need to a relevant grant, including search, eligibility interpretation, freshness, and next action.",
-      "Treated stale or weakly grounded recommendations as a trust problem, not only a model-quality problem.",
-      "Used the operational reality of daily grant updates to shape the product: ingestion, admin controls, and recommendation quality had to work together.",
+      "Matching quality depended on combining business context with current grant data and useful eligibility information.",
+      "The ingestion process had to refresh hundreds of grants daily while retaining enough structure for retrieval and administration.",
+      "The AI workflow ran inside a subscription product, so authentication, billing, admin controls, and recommendation delivery had to work together.",
     ],
     role:
-      "I led engineering across the recommendation experience and SaaS platform, turning the product requirements into a reliable matching workflow with authentication, subscriptions, admin controls, and an automated grant pipeline.",
+      "As Lead Engineer, I built the grant-matching experience and core SaaS platform, including RAG recommendations, the automated grant pipeline, authentication, subscriptions, billing, and administration.",
     decisions: [
-      "Combined structured grant data with retrieval-based recommendations so matching could remain explainable and grounded in current program information.",
-      "Automated grant ingestion and refreshes instead of relying on a manually maintained catalogue.",
-      "Treated freshness, eligibility context, and operational admin tools as product requirements, not background infrastructure.",
-      "Built the matching experience inside a complete subscription product rather than shipping a standalone AI demo.",
+      "Grounded RAG recommendations in structured grant information and current source content.",
+      "Automated grant ingestion and refreshes rather than relying on a manually maintained catalogue.",
+      "Included freshness, eligibility context, and admin tooling in the production workflow.",
+      "Integrated the matching system with authentication, subscriptions, billing, and the rest of the SaaS platform.",
     ],
     shipped: [
       "RAG-based matching and recommendation workflows",
@@ -142,24 +142,24 @@ export const CASE_STUDIES: CaseStudy[] = [
       "Connected AI recommendations to a usable, monetizable SaaS workflow",
     ],
     nextMetrics: [
-      "Relevant-match click-through and saved-grant rate",
-      "Fresh-grant coverage and stale-listing rate",
-      "Match-to-application intent and subscription conversion",
-      "Recommendation quality and explanation usefulness as guardrails",
+      "Grant-ingestion success rate and source freshness",
+      "Retrieval quality, recommendation latency, and groundedness",
+      "Subscription and billing workflow reliability",
+      "Admin error visibility and recovery time",
     ],
     learning:
-      "Freshness, explainability, and admin tooling are visible parts of the user experience. They cannot be treated as background infrastructure behind an AI feature.",
+      "RAG quality depends on the whole data path: source freshness, structured records, retrieval, and operational tools all affect the recommendations users see.",
     demonstrates: [
-      "AI product judgment",
-      "Platform thinking",
-      "Reliability and data freshness",
-      "Product delivery at scale",
+      "RAG implementation in production",
+      "Automated data ingestion",
+      "Full-stack SaaS engineering",
+      "Technical ownership at scale",
     ],
   },
   {
     slug: "habiv",
     name: "Habiv",
-    label: "AI-native tiny game marketplace",
+    label: "AI game platform · full-stack engineering",
     year: "2026",
     url: LINKS.habiv,
     image: "/projects/habiv.png?v=2",
@@ -169,19 +169,18 @@ export const CASE_STUDIES: CaseStudy[] = [
     problem:
       "AI-made games were easy to generate but difficult to experience as a product. They lived in chats, folders, and one-off demos, while players had no focused place to discover short games, creators had no publishing loop, and the platform had to keep untrusted game code away from the main app.",
     research: [
-      "Started from the behavior, not the genre: short games should load quickly, explain themselves fast, and fit into the small gaps in a player's day.",
-      "Separated the two jobs in the product: players need an instant browse-and-play loop; creators need a clear path from a bundle or agent prompt to a public game.",
-      "Treated remixing and sharing as part of discovery, so a game could be a starting point for the next creation rather than a dead-end play session.",
-      "Used the platform constraints to shape the experience: public browsing should stay frictionless, while publishing, creator tools, and account settings can be gated.",
+      "Playable game bundles are untrusted code and must remain isolated from the main application and its user session.",
+      "Publishing needed a repeatable path from an uploaded bundle or agent output through inspection, conversion, thumbnails, and smoke testing.",
+      "The platform combines public browsing and playback with authenticated creator tools and persistent game metadata.",
+      "Storage, ingest jobs, analytics, runs, and leaderboards had to support both player and creator workflows.",
     ],
     role:
-      "I shaped the product direction, information architecture, visual system, and the path from a finished UI to a real creator platform. I built the first product surface, mapped the player and creator journeys, and defined the storage, ingest, runtime, analytics, and agent-publishing systems needed to make the concept durable.",
+      "I led full-stack product engineering from the first interface through the creator platform. I built the browse and play surfaces and connected them to identity, catalog data, object storage, ingest and conversion jobs, analytics, leaderboards, and agent publishing.",
     decisions: [
-      "Made 10–45 second sessions the product constraint, keeping the promise closer to instant play than to a traditional game platform.",
-      "Designed the home feed as a bento-style discovery surface with a featured queue, category rails, and fast access to play instead of a directory of listings.",
-      "Kept browsing and playing public, reserving authentication for creator actions such as publishing, saved games, settings, and personal libraries.",
-      "Isolated playable bundles on a separate game origin so game code cannot read Habiv cookies or reach back into the main application context.",
-      "Made publishing agent-native through an MCP route and a conversion pipeline that can inspect bundles, detect engines, create thumbnails, and smoke-test a playable build.",
+      "Separated the game runtime onto its own origin to isolate playable bundles from Habiv cookies and application context.",
+      "Kept the public catalog and playback surface separate from authenticated publishing, account, and creator operations.",
+      "Built ingest and conversion steps to inspect uploaded bundles, detect engines, generate thumbnails, and smoke-test builds.",
+      "Added an MCP publishing route so agents can submit games into the same processing pipeline as creators.",
     ],
     shipped: [
       "Responsive home feed with featured games, category navigation, search, saved games, history, and a creator profile surface",
@@ -190,29 +189,29 @@ export const CASE_STUDIES: CaseStudy[] = [
       "Platform foundations for Supabase identity and catalog data, R2 game storage, ingest/conversion jobs, analytics, runs, and leaderboards",
     ],
     outcomes: [
-      "Turned an AI-game concept into a live product at habiv.com with a clear player loop and creator loop",
-      "Created a product boundary that makes tiny games feel immediate while leaving room for remixing, social discovery, and creator tools",
-      "Connected interface decisions to a practical platform architecture instead of treating the marketplace UI as a static showcase",
+      "Shipped a live browser-first game platform at habiv.com with public play and creator publishing workflows",
+      "Separated untrusted game execution from the main application context",
+      "Connected the marketplace interface to storage, ingest, analytics, runs, and leaderboard systems",
     ],
     nextMetrics: [
-      "Time from landing to first playable game",
-      "First-play completion and repeat sessions per player",
-      "Publish-to-first-play time and percentage of bundles that pass ingest cleanly",
-      "Remix rate, share rate, creator return rate, and game-load reliability as guardrails",
+      "Bundle validation and conversion success rates",
+      "Game startup time and runtime error rates",
+      "Isolation checks for game execution and user sessions",
+      "Reliability of publishing, analytics, and leaderboard updates",
     ],
     learning:
-      "For an AI-native marketplace, the product is not only the catalog. It is the handoff between generation, publishing, safe execution, discovery, and the next remix. Every step has to feel lighter than the toolchain that produced the game.",
+      "A safe runtime is part of the platform architecture from the start. Separating game code from application sessions shapes storage, publishing, and playback decisions across the system.",
     demonstrates: [
-      "0 to 1 product strategy",
-      "AI-native creator workflows",
-      "Consumer and creator UX",
-      "Platform and trust-boundary thinking",
+      "Full-stack product engineering",
+      "Secure runtime boundaries",
+      "Ingest and conversion pipelines",
+      "MCP and creator integrations",
     ],
   },
   {
     slug: "speediq",
     name: "SpeedIQ",
-    label: "Multi-channel B2B SaaS",
+    label: "Multi-tenant messaging platform · lead engineer",
     year: "2025-2026",
     url: LINKS.speediq,
     image: "/projects/speediq.png?v=2",
@@ -222,17 +221,17 @@ export const CASE_STUDIES: CaseStudy[] = [
     problem:
       "Marketing teams needed to manage customer conversations, broadcasts, automation, and reporting across channels without stitching together separate tools or losing operational visibility.",
     research: [
-      "Mapped how teams moved between broadcasts, WhatsApp conversations, chatbot automation, live chat, and reporting.",
-      "Identified the product boundary as campaigns plus conversations, rather than exposing channel-specific infrastructure to operators.",
-      "Treated onboarding and third-party API constraints as part of the customer journey, especially for WhatsApp Business setup.",
+      "Campaigns and support conversations needed to share customer, channel, and delivery data across the platform.",
+      "The platform had to isolate workspaces while handling asynchronous delivery events and third-party API constraints.",
+      "WhatsApp Business onboarding depended on Meta account setup and embedded signup workflows.",
     ],
     role:
-      "I helped translate multi-channel marketing workflows into a production platform and owned major technical delivery across onboarding, messaging, automation, analytics, and Meta Business API integration.",
+      "I led engineering delivery across onboarding, messaging, automation, analytics, and Meta Business API integration for a multi-tenant WhatsApp and email platform.",
     decisions: [
-      "Centered the experience around campaigns and conversations rather than exposing channel-specific infrastructure.",
-      "Used a multi-tenant architecture so teams, permissions, channel connections, and analytics could scale safely.",
-      "Integrated Meta embedded signup to reduce setup friction for WhatsApp Business customers.",
-      "Connected broadcasts, chatbots, live chat, and analytics so teams could operate and learn in one place.",
+      "Used tenant-aware workspaces for teams, permissions, channel connections, and campaign data.",
+      "Integrated Meta embedded signup and Business API flows into the platform onboarding path.",
+      "Connected broadcasts, chatbot automation, live chat, webhooks, and analytics to shared customer workflows.",
+      "Included campaign delivery visibility so operators could inspect outcomes across channels.",
     ],
     shipped: [
       "WhatsApp and email broadcasts",
@@ -246,24 +245,23 @@ export const CASE_STUDIES: CaseStudy[] = [
       "Turned a complex third-party API workflow into a team-facing SaaS product",
     ],
     nextMetrics: [
-      "Time from signup to first successful campaign",
-      "Delivery quality, failure reasons, and cost per message",
-      "Repeat campaign rate and active team usage",
-      "Conversation resolution and handoff quality as guardrails",
+      "Message delivery and webhook processing success rates",
+      "Campaign queue latency and retry behavior",
+      "Meta connection health and reauthorization recovery",
+      "Tenant isolation across teams, contacts, and analytics",
     ],
     learning:
-      "When a product sits on top of a complex API, onboarding, reliability, and failure visibility are product surfaces. The abstraction only works when teams can trust what happens underneath.",
+      "Third-party messaging APIs make retries, webhook handling, connection health, and failure visibility core parts of a reliable multi-tenant platform.",
     demonstrates: [
-      "Workflow design",
-      "API product delivery",
-      "Multi-tenant systems",
-      "Outcome-oriented execution",
+      "Multi-tenant architecture",
+      "Meta Business API integration",
+      "Messaging and webhook workflows",
+      "Technical leadership and delivery",
     ],
   },
 ];
 
-// Kept for the existing slider component, which is not used on the PM homepage
-// but remains available for future editorial layouts.
+// Kept for the shared slider component used on the portfolio homepage.
 export type Work = {
   name: string;
   year: string;
@@ -294,65 +292,65 @@ export const SELECTED_WORK: Work[] = [
 
 export const EXPERIENCE = [
   {
-    period: "2025-Present",
-    title: "Founder and Product Lead",
+    period: "06/2026-Present",
+    title: "Founder and Lead Engineer",
     org: "Docsiv",
-    detail: "Own product direction, early-user learning, roadmap decisions, and launch execution for an AI document workspace serving agencies.",
+    detail: "Build the AI document workspace end to end and lead technical direction across editors, multi-tenant workspaces, branded client portals, collaboration, analytics, and billing.",
   },
   {
-    period: "2025-Present",
+    period: "01/2026-Present",
     title: "Lead Engineer, AI Products",
     org: "Virtual Xcellence",
-    detail: "Lead product delivery across Govgrant.ca and SpeedIQ, connecting AI systems and platform architecture to customer workflows.",
+    detail: "Lead engineering across Govgrant.ca and SpeedIQ, including RAG recommendations, data pipelines, multi-tenant systems, messaging integrations, and production SaaS delivery.",
   },
   {
-    period: "2022-2025",
-    title: "Full-stack Developer and Project Manager",
+    period: "10/2022-01/2026",
+    title: "Full-Stack Developer, Technical Delivery",
     org: "NJ Designpark",
-    detail: "Managed and shipped SaaS products across education, trades, marketing, and services; reduced support workload by 40% through AI-enabled workflows.",
+    detail: "Built and shipped SaaS products across education, trades, marketing, and services; delivered production AI workflows that reduced client support workload by 40%.",
   },
   {
     period: "2020-2022",
-    title: "Independent Product Engineer",
+    title: "Independent Full-Stack Developer",
     org: "Freelance",
     detail: "Built production web products and payment workflows for small businesses while completing a B.Tech in Computer Science.",
   },
 ];
 
-export const PRODUCT_PRACTICE = [
-  { number: "01", title: "Find the real workflow", text: "Start with the job users are trying to complete, where it breaks, and what the current workaround costs them." },
-  { number: "02", title: "Choose the smallest useful bet", text: "Turn ambiguity into a product boundary, explicit tradeoffs, and a sequence the team can actually ship." },
-  { number: "03", title: "Build with the team", text: "Work close to engineering and design, using technical depth to remove uncertainty without prescribing every implementation detail." },
-  { number: "04", title: "Learn from production", text: "Instrument the workflow, talk to users, and use what happens after launch to make the next decision better." },
+export const ENGINEERING_APPROACH = [
+  { number: "01", title: "Design for the whole system", text: "Connect interface, APIs, data, integrations, and deployment around the workflow the product needs to support." },
+  { number: "02", title: "Keep the architecture practical", text: "Make clear tradeoffs around tenancy, reliability, access, and the systems the team can operate." },
+  { number: "03", title: "Lead close to the code", text: "Set technical direction, break down delivery, and stay hands-on through implementation and review." },
+  { number: "04", title: "Own what ships", text: "Carry work through release and production, then use real failures and usage to guide the next improvement." },
 ];
 
 export const SERVICES = [
-  "Customer discovery",
-  "0 to 1 product strategy",
-  "Roadmaps & prioritization",
-  "Requirements & workflows",
-  "AI product delivery",
-  "Technical leadership",
+  "Full-stack SaaS engineering",
+  "AI, RAG & agent systems",
+  "Backend APIs & integrations",
+  "Multi-tenant architecture",
+  "Technical direction & delivery",
+  "Hands-on team leadership",
 ];
 
 export const STACK = [
-  "Next.js · React · TypeScript",
-  "Node.js · Python · SQL",
-  "PostgreSQL · Supabase",
-  "OpenAI · Claude · Gemini",
-  "RAG · AI agents · n8n",
-  "Vercel · Railway · Docker",
-  "Stripe · ChargeBee · Dodo",
+  "Next.js · React · TypeScript · Tailwind",
+  "Node.js · Express · Python · Django",
+  "PostgreSQL · Supabase · MongoDB · SQL",
+  "OpenAI · Claude · Gemini · Vercel AI SDK",
+  "RAG · AI agents · n8n · webhooks",
+  "Docker · Vercel · Railway · CI/CD",
+  "Stripe · ChargeBee · Dodo Payments",
 ];
 
 export type NowItem = { text: string; live?: boolean; href?: string };
 export const NOW: NowItem[] = [
+  { text: "Building and improving Docsiv as founder and lead engineer", live: true },
   { text: "Onboarding early agencies to Docsiv", live: true },
-  { text: "Talking to users and sharpening product-market fit", live: true },
-  { text: "Testing distribution and the next product bets", live: true },
-  { text: "Shipping new Docsiv features every week" },
-  { text: "Writing product case studies", href: "/work/docsiv" },
-  { text: "Open to Technical Product Manager and AI Product Manager roles" },
+  { text: "Leading engineering delivery for Govgrant.ca and SpeedIQ", live: true },
+  { text: "Shipping AI, collaboration, and workflow improvements" },
+  { text: "Writing engineering case studies", href: "/work/docsiv" },
+  { text: "Open to senior full-stack, tech lead, and engineering lead roles" },
   { text: "Living in Bangalore and drinking too much filter coffee ☕" },
 ];
 export const NOW_UPDATED = "Updated September 2026";

@@ -1,13 +1,13 @@
-# Neeraj Sharma Product Portfolio
+# Neeraj Sharma Engineering Portfolio
 
-The source for [itsneeraj.com](https://itsneeraj.com), positioning Neeraj as a Technical Product Manager for AI and B2B SaaS.
+The source for [itsneeraj.com](https://itsneeraj.com), positioning Neeraj as a full-stack engineer and hands-on technical lead for AI and SaaS products.
 
 ## What the portfolio covers
 
-- Product positioning and measurable outcomes
-- Decision-focused case studies for Docsiv, Govgrant.ca, and SpeedIQ
-- Product practice, experience, and contact information
-- Downloadable Technical Product Manager resume
+- Full-stack engineering and technical leadership
+- Engineering case studies for Docsiv, Govgrant.ca, Habiv, and SpeedIQ
+- Engineering capabilities, experience, and contact information
+- Downloadable full-stack engineering resume
 
 ## Local development
 

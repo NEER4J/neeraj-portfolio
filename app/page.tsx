@@ -71,13 +71,14 @@ export default async function HomePage() {
             <a href={LINKS.docsiv} target="_blank" rel="noreferrer" className={linkCls}>
               Docsiv
             </a>
-            , an AI document workspace for agencies. I own the product direction,
-            early-user learning, roadmap decisions, and launch execution.
+            , an AI document workspace for agencies. I designed and built its
+            editors, multi-tenant workspaces, branded client portals,
+            collaboration, analytics, and billing.
           </p>
           <p>
-            I also lead engineering at{" "}
+            At{" "}
             <span className="font-medium text-[var(--v2-fg)]">Virtual Xcellence</span>
-            , where I lead product delivery for AI products including{" "}
+            , I lead engineering for AI products including{" "}
             <a href={LINKS.govgrant} target="_blank" rel="noreferrer" className={linkCls}>
               Govgrant.ca
             </a>{" "}
@@ -123,7 +124,7 @@ export default async function HomePage() {
       {/* Services + Stack -------------------------------------------- */}
       <div className="mt-20 grid grid-cols-1 gap-14 sm:grid-cols-2 sm:gap-8">
         <div className="v2-fade" style={{ animationDelay: "60ms" }}>
-          <h2 className="v2-label mb-5">product</h2>
+          <h2 className="v2-label mb-5">engineering</h2>
           <ul className="space-y-2.5">
             {SERVICES.map((item) => (
               <li key={item} className="text-[15px] leading-[1.5] text-[var(--v2-fg-soft)]">
@@ -196,10 +197,9 @@ export default async function HomePage() {
       {/* Contact ----------------------------------------------------- */}
       <Section id="contact" label="contact" delay="60ms">
         <p className="text-[15px] leading-[1.72] text-[var(--v2-fg-soft)]">
-          I&apos;m open to Technical Product Manager and AI Product Manager roles,
-          especially with AI-first and B2B SaaS teams. I bring product judgment,
-          customer focus, and enough engineering depth to work closely with the
-          team that ships. Best path is a{" "}
+          I&apos;m open to senior full-stack engineer, tech lead, or hands-on
+          engineering lead roles with AI and SaaS teams. I can own architecture
+          and delivery while staying close to implementation. Best path is a{" "}
           <a
             href={CALL}
             target="_blank"

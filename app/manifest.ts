@@ -4,10 +4,10 @@ export const dynamic = "force-static";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Neeraj Sharma · full-stack engineer, AI products",
+    name: "Neeraj Sharma · Full-Stack Engineer & Technical Lead",
     short_name: "Neeraj Sharma",
     description:
-      "Full-stack engineer building AI products. Founder of Docsiv, now focused on early users and distribution.",
+      "Full-stack engineer and technical lead building production AI and SaaS products.",
     start_url: "/",
     display: "standalone",
     background_color: "#fafafa",

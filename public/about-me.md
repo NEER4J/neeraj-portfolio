@@ -1,39 +1,56 @@
 # Neeraj Kumar Sharma
 
-Neeraj is a Technical Product Manager, product-minded engineer, and founder building AI and B2B SaaS products from customer problem to production.
+Full-stack engineer and hands-on technical lead with 5+ years building AI and SaaS products for real users. I work across frontend, backend, data, and AI integrations, and lead technical direction and delivery while staying close to the code.
 
-## Product focus
+## Engineering strengths
 
-- AI and B2B SaaS
-- Customer discovery and workflow analysis
-- Zero-to-one product strategy
-- Roadmaps, requirements, and prioritization
-- Technical product delivery
-- Product analytics and learning loops
+- Full-stack product development with Next.js, React, TypeScript, Node.js, and Python
+- Production AI features, RAG pipelines, agents, and document workflows
+- Multi-tenant SaaS, APIs, integrations, billing, and analytics
+- Technical architecture, delivery ownership, and cross-functional engineering leadership
 
-## Selected product work
+## Selected work
 
-### Docsiv
+### [Docsiv](https://docsiv.com)
 
-Founder and Product Lead. Docsiv is an AI document workspace for agencies that connects document creation, brand context, client portals, sharing, signing, analytics, and billing. Neeraj shaped the product thesis, translated agency workflows into a roadmap, worked across design and engineering, launched the product, and now uses early-user conversations to guide distribution and product decisions.
+Founder and Lead Engineer. Built and launched an AI document workspace for agencies, spanning document editors, brand kits, multi-tenant workspaces, branded client portals, collaboration, analytics, e-signature, and credit billing. Now building with early agency users.
 
-### Govgrant.ca
+### [Govgrant.ca](https://govgrant.ca)
 
-Led engineering for a Canadian grant-discovery platform serving more than 2,000 users. The product combines RAG-based recommendations with an automated pipeline that refreshes more than 300 grants daily, plus authentication, subscriptions, billing, and administration.
+Lead Engineer. Built a RAG-based grant discovery platform serving 2,000+ users, with an automated pipeline that refreshes 300+ grants daily, plus authentication, subscriptions, billing, and administration.
 
-### SpeedIQ
+### [SpeedIQ](https://app.speediq.ai)
 
-Led major product delivery for a multi-tenant WhatsApp and email marketing platform. The product connects onboarding, broadcasts, chatbot automation, live chat, and campaign analytics and has delivered more than 100,000 messages.
+Lead Engineer. Built major systems for a multi-tenant WhatsApp and email marketing platform, including Meta Business API onboarding, broadcasts, chatbot automation, live chat, webhooks, and campaign analytics. The platform has delivered 100,000+ messages.
+
+### [Habiv](https://habiv.com)
+
+Full-stack product engineering for a browser-first home for short games. Built creator and player workflows, game ingestion and conversion, storage, analytics, leaderboards, and isolated game execution.
+
+### Apstic
+
+Built automation workflows connecting CRMs, commerce, accounting, messaging, and browser tasks, alongside a local-first AI assistant.
 
 ## Experience
 
-- 2025-Present: Founder and Product Lead, Docsiv
-- 2025-Present: Lead Engineer for AI Products, Virtual Xcellence
-- 2022-2025: Full-stack Developer and Project Manager, NJ Designpark
-- 2020-2022: Independent Product Engineer
-- 2020-2023: B.Tech in Computer Science, Chhattisgarh Swami Vivekanand Technical University
+- **06/2026-Present:** Founder and Lead Engineer, Docsiv
+- **01/2026-Present:** Lead Engineer, AI Products, Virtual Xcellence
+- **10/2022-01/2026:** Full-Stack Developer, Technical Delivery, NJ Designpark
+- **2020-2022:** Independent Full-Stack Developer
 
-## Contact
+At NJ Designpark, I shipped SaaS products for education, trades, and service businesses. Production AI workflows reduced client support workload by 40%, and custom systems and automation saved clients more than $5,000 per month.
+
+## Technical stack
+
+TypeScript, JavaScript, Python, SQL, Next.js, React, Node.js, Express, Django, PostgreSQL, Supabase, MongoDB, OpenAI, Claude, Gemini, RAG, Vercel AI SDK, n8n, Docker, Vercel, Railway, Stripe, ChargeBee, and Dodo Payments.
+
+## Education
+
+B.Tech in Computer Science, Chhattisgarh Swami Vivekanand Technical University, 2020-2023.
+
+## Roles and contact
+
+Open to senior full-stack engineer, tech lead, and hands-on engineering lead roles with AI and SaaS teams. Based in India and open to remote work.
 
 - Website: https://itsneeraj.com
 - Email: ittsneeraj@gmail.com

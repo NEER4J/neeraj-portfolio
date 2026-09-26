@@ -1,19 +1,19 @@
-# Site copy
+# Portfolio copy reference
 
-Every bit of human-readable copy on the site, UI text, marketing prose, the chat system prompt, and the bio it embeds. Grouped by where it appears.
+Primary portfolio copy and metadata, grouped by where they appear in the site.
 
 ---
 
 ## SEO / metadata, `app/layout.tsx` + `app/manifest.ts`
 
 - **Site name:** Neeraj Sharma
-- **Default title:** `Neeraj Sharma · full-stack engineer, AI products`
+- **Default title:** `Neeraj Sharma · Full-Stack Engineer & Technical Lead`
 - **Title template:** `%s · Neeraj Sharma`
-- **Description:** Full-stack engineer building AI products. Founder of Docsiv, now focused on early users and distribution, and lead engineer on Govgrant.ca and SpeedIQ.
+- **Description:** Full-stack engineer and technical lead with 5+ years building AI and SaaS products. Founder and lead engineer at Docsiv; lead engineer for Govgrant.ca and SpeedIQ.
 - **Manifest name:** `Neeraj Sharma · full-stack engineer, AI products`
-- **Manifest description:** Full-stack engineer building AI products. Founder of Docsiv, now focused on early users and distribution.
-- **JSON-LD job title:** Full-stack engineer · works for Virtual Xcellence · alumni of Chhattisgarh Swami Vivekanand Technical University · India (remote-friendly)
-- **Keywords:** Neeraj Sharma, Neeraj Kumar Sharma, full-stack engineer, AI engineer, AI SaaS, Next.js developer, TypeScript, RAG, Claude, OpenAI, Docsiv, Govgrant.ca, SpeedIQ, Virtual Xcellence
+- **Manifest description:** Full-stack engineer and technical lead building production AI and SaaS products.
+- **JSON-LD job title:** Full-Stack Engineer and Technical Lead · Virtual Xcellence · Chhattisgarh Swami Vivekanand Technical University · India (remote-friendly)
+- **Keywords:** Neeraj Sharma, Neeraj Kumar Sharma, senior full-stack engineer, technical lead, engineering lead, AI engineer, AI SaaS, software architecture, technical delivery, Next.js developer, TypeScript, RAG, Claude, OpenAI, Docsiv, Govgrant.ca, SpeedIQ, Habiv, Virtual Xcellence
 
 ---
 
@@ -21,7 +21,7 @@ Every bit of human-readable copy on the site, UI text, marketing prose, the chat
 
 - Eyebrow: `© Code by Neeraj`
 - Name: `Neeraj Sharma 👋`
-- Tagline: `Full-stack engineer · AI software.`
+- Tagline: `Full-stack engineer · technical lead · AI software.`
 - Sub: `Building for paying users since 2020.`
 - Nav labels: `Hello`, `Work`, `About`, `Contact`
 
@@ -40,13 +40,13 @@ Mobile top bar repeats `© Code by Neeraj`.
 - **Founders:** I'm Neeraj. I take ideas to live products fast, and stay through the part where they need to actually work.
 - **Designers:** I'm Neeraj. Engineer with design taste. I care how it reads, not just what it does.
 
-**Hero body:** I built and launched Docsiv, an AI document workspace for agencies. I'm now focused on onboarding early users, learning what they need, and building the distribution that helps the product grow. I also lead engineering on Govgrant.ca and SpeedIQ at Virtual Xcellence. Based in India.
+**Hero body:** I built and launched Docsiv, an AI document workspace for agencies, spanning editors, multi-tenant workspaces, branded client portals, collaboration, analytics, and billing. I also lead engineering for AI products at Virtual Xcellence, including Govgrant.ca and SpeedIQ. Based in India.
 
 ---
 
 ## Sticky note (desktop + mobile), `components/sticky-notes.tsx` + `components/sections/hello.tsx`
 
-- Eyebrow: `now growing`
+- Eyebrow: `now building`
 - Body: `AI documents. Branded client portals.`
 - Link label: `docsiv.com ↗`
 - Empty user note placeholder: `write something…`
@@ -57,13 +57,13 @@ Mobile top bar repeats `© Code by Neeraj`.
 ## Work section, `components/sections/work.tsx` + `lib/content.ts`
 
 - Title: `Work`
-- Intro: Six products I've built or led from zero to live. Most are still running.
+- Intro: Full-stack products I've built and led from first implementation through production.
 - Launch chip: `launched · now growing`
 
 **Projects:**
 
-1. **Docsiv**, `AI docs · agencies`, 2025, *launched · now growing*
-   > An AI document workspace for agencies. Built and launched to generate proposals, decks, contracts, and sheets from a prompt. Brand kits apply automatically. Branded client portals on custom domains. Multi-tenant, with credit billing, comments, version history, analytics, and e-signature. Now focused on early users and distribution.
+1. **Docsiv**, `AI docs · agencies`, 2024–2026, *live*
+   > Built and launched a multi-tenant AI document workspace with editors, brand kits, client portals, collaboration, analytics, e-signature, and credit billing.
    - Stack: Next.js · Supabase · AI SDK · OpenAI · Liveblocks · Dodo Payments
 
 2. **Govgrant.ca**, `RAG · Canada`, 2025, `2,000 users`
@@ -99,15 +99,15 @@ Mobile top bar repeats `© Code by Neeraj`.
 - Title: `About`
 
 **Currently:**
-- Senior full-stack at Virtual Xcellence, since Jan 2025
-- Founder of Docsiv, now focused on early users and distribution; leading engineering on Govgrant.ca and SpeedIQ
+- Lead Engineer, AI Products at Virtual Xcellence, since Jan 2026
+- Founder and Lead Engineer at Docsiv, building and improving the live product with early agencies
 - Based in India, work remote
 - ittsneeraj@gmail.com
 
 **Background:**
 - **2020.** Started freelancing in college. Django, Next.js, Node. Stripe, Razorpay, PayPal integrations. First time deploying code that handled real money.
-- **2022.** Joined NJ Designpark. Led full-stack and PM work. Built Trade Business School from scratch. Wired Claude and OpenAI into support flows, dropped tickets 40%. Built a review system that saved a client $2k a month.
-- **2025.** Moved fully into AI SaaS at Virtual Xcellence. Now leading three products.
+- **2022.** Joined NJ Designpark. Built and shipped full-stack SaaS for education, trades, and service businesses. Production AI workflows reduced client support workload by 40%.
+- **2026.** Joined Virtual Xcellence as Lead Engineer for AI Products, building Govgrant.ca and SpeedIQ.
 
 **Stack:**
 - frontend: Next.js · React · TypeScript · Tailwind · Shadcn · Framer Motion
@@ -116,8 +116,10 @@ Mobile top bar repeats `© Code by Neeraj`.
 - infra: Vercel · Railway · Docker
 - payments: Stripe · ChargeBee · Dodo Payments · Razorpay
 
-**How I work:**
-- Ship the smallest version that solves the actual problem. Iterate from real usage.
+**Engineering approach:**
+- Design across interface, APIs, data, integrations, and deployment.
+- Lead technical direction and delivery while staying close to implementation.
+- Improve what ships using production behavior and user feedback.
 - Treat AI as a product surface, not a demo.
 - Stay across design, architecture, build, and what happens after launch.
 - Comfortable as the only engineer or part of a team.
@@ -127,7 +129,7 @@ Mobile top bar repeats `© Code by Neeraj`.
 ## Contact section, `components/sections/contact.tsx`
 
 - Title: `Contact`
-- Intro: Open to full-time roles, contract, and freelance, senior full-stack and AI engineering. Or a chat about something you're building.
+- Intro: Open to senior full-stack engineer, tech lead, and hands-on engineering lead roles with AI and SaaS teams.
 - **Preferred:** `Book 30 minutes ↗`, `cal.com/neeraj-sharma/30min`
 - **Email:** ittsneeraj@gmail.com
 - **Elsewhere:** linkedin · github · x · instagram

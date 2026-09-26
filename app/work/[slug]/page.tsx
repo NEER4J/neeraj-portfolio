@@ -18,8 +18,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const study = CASE_STUDIES.find((item) => item.slug === slug);
   if (!study) return {};
   return {
-    title: `${study.name} Product Case Study`,
-    description: `${study.summary} Read the problem, product decisions, delivery scope, and outcomes.`,
+    title: `${study.name} Engineering Case Study`,
+    description: `${study.summary} Read the engineering context, technical decisions, delivery scope, and outcomes.`,
     alternates: { canonical: `/work/${study.slug}` },
   };
 }
@@ -60,13 +60,13 @@ export default async function CaseStudyPage({ params }: Props) {
           </div>
 
           <CaseSection label="the problem"><p>{study.problem}</p></CaseSection>
-          <CaseSection label="the research">
+          <CaseSection label="technical context">
             <ul className="flex flex-col">
               {study.research.map((item) => <li key={item} className="border-t border-[var(--v2-line)] py-3 text-[15px] leading-[1.65] first:border-t-0 first:pt-0">{item}</li>)}
             </ul>
           </CaseSection>
-          <CaseSection label="my role and scope"><p>{study.role}</p></CaseSection>
-          <CaseSection label="key product decisions">
+          <CaseSection label="my role and technical scope"><p>{study.role}</p></CaseSection>
+          <CaseSection label="architecture and engineering decisions">
             <ol className="flex flex-col">
               {study.decisions.map((decision) => (
                 <li key={decision} className="border-t border-[var(--v2-line)] py-3.5 text-[15px] leading-[1.65] text-[var(--v2-fg-soft)] first:border-t-0 first:pt-0">{decision}</li>
@@ -79,7 +79,7 @@ export default async function CaseStudyPage({ params }: Props) {
             <ListSection label="outcomes" items={study.outcomes} />
           </div>
 
-          <CaseSection label="next success signals">
+          <CaseSection label="engineering priorities">
             <ul className="flex flex-col">
               {study.nextMetrics.map((item) => <li key={item} className="border-t border-[var(--v2-line)] py-3 text-[15px] leading-[1.65] first:border-t-0 first:pt-0">{item}</li>)}
             </ul>
@@ -87,18 +87,18 @@ export default async function CaseStudyPage({ params }: Props) {
 
           <CaseSection label="what I learned"><p>{study.learning}</p></CaseSection>
 
-          <CaseSection label="what this demonstrates">
+          <CaseSection label="engineering strengths demonstrated">
             <ul className="flex flex-col">
               {study.demonstrates.map((item) => <li key={item} className="border-t border-[var(--v2-line)] py-3 text-[15px] text-[var(--v2-fg-soft)] first:border-t-0 first:pt-0">{item}</li>)}
             </ul>
           </CaseSection>
 
           <footer className="v2-fade mt-20 border-t border-[var(--v2-line)] pt-6">
-            <p className="text-[15px] leading-[1.72] text-[var(--v2-fg-soft)]">Want to discuss the decisions behind the build?</p>
+            <p className="text-[15px] leading-[1.72] text-[var(--v2-fg-soft)]">Want to discuss the engineering behind the build?</p>
             <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-[15px]">
               <a href="mailto:ittsneeraj@gmail.com" className="v2-link text-[var(--v2-fg)]">Email Neeraj</a>
               <a href={study.url} target="_blank" rel="noreferrer" className="v2-link text-[var(--v2-fg)]">Visit {study.name} ↗</a>
-              <a href={LINKS.resume} className="v2-link text-[var(--v2-fg)]">PM resume</a>
+              <a href={LINKS.resume} className="v2-link text-[var(--v2-fg)]">Full-stack resume</a>
             </div>
           </footer>
         </article>

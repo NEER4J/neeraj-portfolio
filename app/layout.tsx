@@ -29,10 +29,10 @@ const pressStart = Press_Start_2P({
 
 const SITE_URL = "https://itsneeraj.com";
 const SITE_NAME = "Neeraj Sharma";
-const TITLE_DEFAULT = "Neeraj Sharma · Technical Product Manager for AI and SaaS";
+const TITLE_DEFAULT = "Neeraj Sharma · Full-Stack Engineer & Technical Lead";
 const TITLE_TEMPLATE = "%s · Neeraj Sharma";
 const DESCRIPTION =
-  "Technical Product Manager and product-minded engineer building AI and B2B SaaS from customer problem to production. Founder of Docsiv.";
+  "Full-stack engineer and technical lead with 5+ years building AI and SaaS products. Founder and lead engineer at Docsiv; lead engineer for Govgrant.ca and SpeedIQ.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -49,12 +49,12 @@ export const metadata: Metadata = {
   keywords: [
     "Neeraj Sharma",
     "Neeraj Kumar Sharma",
-    "Technical Product Manager",
-    "AI Product Manager",
-    "B2B SaaS Product Manager",
-    "product strategy",
-    "product discovery",
-    "0 to 1 products",
+    "Senior Full-Stack Engineer",
+    "Technical Lead",
+    "Engineering Lead",
+    "AI SaaS engineer",
+    "software architecture",
+    "technical delivery",
     "full-stack engineer",
     "AI SaaS",
     "Next.js developer",
@@ -140,10 +140,10 @@ function PersonJsonLd() {
     "OpenAI",
     "Anthropic Claude",
     "Multi-tenant SaaS",
-    "Product Management",
-    "Product Strategy",
-    "Customer Discovery",
-    "Product engineering",
+    "Software Architecture",
+    "Technical Leadership",
+    "RAG Systems",
+    "Full-Stack Engineering",
   ];
 
   const works = CASE_STUDIES.map((p) => ({
@@ -159,8 +159,8 @@ function PersonJsonLd() {
     name: "Neeraj Kumar Sharma",
     alternateName: "Neeraj Sharma",
     url: SITE_URL,
-    image: `${SITE_URL}/opengraph-image.png`,
-    jobTitle: "Technical Product Manager",
+    image: `${SITE_URL}/image%20copy.png`,
+    jobTitle: "Full-Stack Engineer and Technical Lead",
     worksFor: {
       "@type": "Organization",
       name: "Virtual Xcellence",
