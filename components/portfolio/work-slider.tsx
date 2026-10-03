@@ -98,28 +98,26 @@ function WorkCard({ work, priority }: { work: Work; priority?: boolean }) {
         )}
       </div>
       <div className="flex flex-1 flex-col">
-        <div className="mt-4 flex items-start justify-between gap-4">
-          <div className="min-w-0">
-            <span className="inline-flex items-baseline gap-1.5 text-[15px] font-medium tracking-[-0.01em] text-[var(--v2-fg)]">
-              <span className={work.href ? "v2-link decoration-[var(--v2-line-strong)]" : ""}>
-                {work.name}
-              </span>
-              {work.href && (
-                <span
-                  aria-hidden
-                  className="text-[12px] text-[var(--v2-muted)] transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-                >
-                  ↗
-                </span>
-              )}
+        <div className="mt-4 min-w-0">
+          <span className="inline-flex items-baseline gap-1.5 text-[15px] font-medium tracking-[-0.01em] text-[var(--v2-fg)]">
+            <span className={work.href ? "v2-link decoration-[var(--v2-line-strong)]" : ""}>
+              {work.name}
             </span>
-            <p className="mt-1 text-[13.5px] leading-[1.5] text-[var(--v2-fg-soft)]">
-              {work.blurb}
-            </p>
-          </div>
-          <span className="shrink-0 pt-0.5 text-[12px] text-[var(--v2-muted)]">
+            {work.href && (
+              <span
+                aria-hidden
+                className="text-[12px] text-[var(--v2-muted)] transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+              >
+                ↗
+              </span>
+            )}
+          </span>
+          <span className="mt-1 block text-[12px] leading-[1.45] text-[var(--v2-muted)]">
             {work.metric ?? work.year}
           </span>
+          <p className="mt-3 w-full text-[13.5px] leading-[1.5] text-[var(--v2-fg-soft)]">
+            {work.blurb}
+          </p>
         </div>
         {work.href?.startsWith("/work/") && (
           <span className="mt-auto w-fit pt-3">
