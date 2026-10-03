@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+.work-slider .swiper-wrapper {
+  align-items: stretch;
+}
+
 /* ──────────────────────────────────────────────────────────────
    THEME SYSTEM
    Themes set CSS variables on <html data-theme="...">.

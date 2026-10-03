@@ -42,6 +42,7 @@ export function WorkSlider() {
   return (
     <div className="v2-bleed">
       <Swiper
+        className="work-slider"
         onSwiper={(s) => {
           swiperRef.current = s;
         }}
@@ -61,7 +62,7 @@ export function WorkSlider() {
         {SELECTED_WORK.map((w, i) => (
           <SwiperSlide
             key={w.name}
-            className="!h-auto !w-[76vw] sm:!w-[420px] lg:!w-[520px]"
+            className="!flex !h-auto !w-[76vw] sm:!w-[420px] lg:!w-[520px]"
           >
             <WorkCard work={w} priority={i === 0} />
           </SwiperSlide>
@@ -96,39 +97,43 @@ function WorkCard({ work, priority }: { work: Work; priority?: boolean }) {
           </span>
         )}
       </div>
-      <div className="mt-4 flex items-start justify-between gap-4">
-        <div className="min-w-0">
-          <span className="inline-flex items-baseline gap-1.5 text-[15px] font-medium tracking-[-0.01em] text-[var(--v2-fg)]">
-            <span className={work.href ? "v2-link decoration-[var(--v2-line-strong)]" : ""}>
-              {work.name}
-            </span>
-            {work.href && (
-              <span
-                aria-hidden
-                className="text-[12px] text-[var(--v2-muted)] transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-              >
-                ↗
+      <div className="flex flex-1 flex-col">
+        <div className="mt-4 flex items-start justify-between gap-4">
+          <div className="min-w-0">
+            <span className="inline-flex items-baseline gap-1.5 text-[15px] font-medium tracking-[-0.01em] text-[var(--v2-fg)]">
+              <span className={work.href ? "v2-link decoration-[var(--v2-line-strong)]" : ""}>
+                {work.name}
               </span>
-            )}
+              {work.href && (
+                <span
+                  aria-hidden
+                  className="text-[12px] text-[var(--v2-muted)] transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                >
+                  ↗
+                </span>
+              )}
+            </span>
+            <p className="mt-1 text-[13.5px] leading-[1.5] text-[var(--v2-fg-soft)]">
+              {work.blurb}
+            </p>
+          </div>
+          <span className="shrink-0 pt-0.5 text-[12px] text-[var(--v2-muted)]">
+            {work.metric ?? work.year}
           </span>
-          <p className="mt-1 text-[13.5px] leading-[1.5] text-[var(--v2-fg-soft)]">
-            {work.blurb}
-          </p>
         </div>
-        <span className="shrink-0 pt-0.5 text-[12px] text-[var(--v2-muted)]">
-          {work.metric ?? work.year}
-        </span>
+        {work.href?.startsWith("/work/") && (
+          <span className="mt-auto w-fit pt-3">
+            <span className="inline-flex items-center gap-1.5 border border-[var(--v2-line-strong)] px-2.5 py-1.5 text-[13px] text-[var(--v2-fg)] transition-colors group-hover:border-[var(--v2-fg-soft)]">
+              Read case study <span aria-hidden>→</span>
+            </span>
+          </span>
+        )}
       </div>
-      {work.href?.startsWith("/work/") && (
-        <span className="mt-3 inline-flex items-center gap-1.5 border border-[var(--v2-line-strong)] px-2.5 py-1.5 text-[13px] text-[var(--v2-fg)] transition-colors group-hover:border-[var(--v2-fg-soft)]">
-          Read case study <span aria-hidden>→</span>
-        </span>
-      )}
     </>
   );
 
   const cls =
-    "group block transition-transform duration-300 ease-out will-change-transform hover:-translate-y-[3px]";
+    "group flex h-full w-full flex-col transition-transform duration-300 ease-out will-change-transform hover:-translate-y-[3px]";
 
   return work.href ? (
     <a
