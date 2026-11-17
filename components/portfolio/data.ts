@@ -60,7 +60,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     label: "AI SaaS · technical founder",
     year: "2024-2026",
     url: LINKS.docsiv,
-    image: "/projects/docsiv.png?v=2",
+    image: "/projects/docsiv.png?v=3",
     metric: "Live and onboarding early agencies",
     summary:
       "A multi-tenant AI document workspace for agencies, built across editors, brand kits, client portals, collaboration, analytics, signing, and billing.",
@@ -111,7 +111,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     label: "Production RAG platform · lead engineer",
     year: "2025-2026",
     url: LINKS.govgrant,
-    image: "/projects/govgrant.png",
+    image: "/projects/govgrant.png?v=2",
     metric: "2,000+ users and 300+ grants refreshed daily",
     summary:
       "A Canadian grant-discovery platform that matches businesses with relevant funding programs using RAG-based recommendations.",
